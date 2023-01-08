@@ -13,7 +13,7 @@ DEFAULT_EXTRACTIONS = [
     (122663, "A quote about putting quotes in VC, in VC."),
     (125770, "Apparently I said that once too often."),
     (125768, "\"jk but only a little bit jk\""),
-    (125896, "C++ templates will lead you down the rabbithole."),
+    (125894, "C++ templates will lead you down the rabbithole."),
     (128669, "The IRC notifications are a little bit harsh sometimes, especially if they all seem to spell failure."),
     (132827, "Overflow-correct code is deviously hard. https://github.com/SerenityOS/serenity/commit/183b2e71ba8d85293db493cab27b8adb4af54981"),
 ]
