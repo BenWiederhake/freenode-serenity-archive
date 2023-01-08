@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #132827</h1>
+<p>
+<span class="mono"><span class="time">2021-03-08T18:13:43</span> &lt;<span class="user">BenW</span>&gt; <span class="content">^^</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:16:00</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&gt; ExclimationMark</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:16:00</span> &lt;<span class="user">BenW</span>&gt; <span class="content">:P</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:18:37</span> &lt;<span class="user">linusg</span>&gt; <span class="content">hf!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:21:19</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&quot;There cannot be more unused bits than the entirety of the input&quot; ^^</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:21:25</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I love statements like these</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:21:27</span> &lt;<span class="user">BenW</span>&gt; <span class="content">whl!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:21:37</span> &lt;<span class="user">linusg</span>&gt; <span class="content">hbw!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:21:57</span> &lt;<span class="user">linusg</span>&gt; <span class="content">I see you&#x27;re still collecting quotes :D</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:25:14</span> &lt;<span class="user">kling</span>&gt; <span class="content">hl!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:25:20</span> &lt;<span class="user">linusg</span>&gt; <span class="content">hk!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:29:47</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">hl!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:30:04</span> &lt;<span class="user">linusg</span>&gt; <span class="content">hcxb!</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:30:23</span> &lt;<span class="user">linusg</span>&gt; <span class="content">I see you&#x27;re still fixing shell bugs :D</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:32:26</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">there is no end to shell bugs</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:35:03</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">BenW: geez, finally got those test cases you pointed out to pass....</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:35:15</span> &lt;<span class="user">BenW</span>&gt; <span class="content">XD</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:35:36</span> &lt;<span class="user">BenW</span>&gt; <span class="content">tomuta_: Now you know why I ranted so much about overflow-correct code :D</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:36:04</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Do you have a particular usecase in mind? I&#x27;m surprised that you added so much API and 0 callsites.</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:36:11</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">Hehe tbh I didn&#x27;t look at your changes until i started trying to rebase my smp branch</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-03-08T18:36:25</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">&quot;Does your code contain unexpected integer overflow? of course it does! contact BenW to find out why!&quot;</span></span> <span class="context">(Overflow-correct code is deviously hard. https://github.com/SerenityOS/serenity/commit/183b2e71ba8d85293db493cab27b8adb4af54981)</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:36:54</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">In there I was using timestamps to detect if I should dump stack traces, but that code changed from u64 to Time, so I needed Time math ;)</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:36:54</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Ohh yeah, I forgot about that.</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:37:21</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Maybe it would be a good idea to merge some parts of that branch? This way you don&#x27;t have to spend 90% of your time just rebasing :S</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:37:26</span> &lt;<span class="user">BenW</span>&gt; <span class="content">CxByte: &lt;3</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:38:00</span> &lt;<span class="user">BenW</span>&gt; <span class="content">CxByte: Although, strictly speaking his code did *not* contain an integer overflow, or any kind of UB. It returned the wrong result for a different reason :P</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:38:02</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">BenW: that&#x27;s my goal but there are some patches that will make non-smp really slow (due to many other unsolved problems)</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:38:25</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Hmm, that makes sense.</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:38:38</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Wait, no, it doesn&#x27;t.</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:39:10</span> &lt;<span class="user">BenW</span>&gt; <span class="content">People will still run Serenity on single-core (virtual) machines, so we shouldn&#x27;t grind to a halt, even when the branch finally gets merged.</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:39:17</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">BenW: &quot;Does your contain correctly handle overflow? of course not! BenW can tell you why!&quot;</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:39:26</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">s/your /&amp;code/</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:39:28</span> &lt;<span class="user">BenW</span>&gt; <span class="content">CxByte: That&#x27;s the spirit! XD</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:39:52</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&quot;Does your code contain correctly handle overflow?&quot; still doesn&#x27;t make much sense though</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:40:01</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">dammit</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:40:08</span> &lt;<span class="user">BenW</span>&gt; <span class="content">CxByte: Are you hearing 95 voices? https://github.com/BenWiederhake/95voices#95voices</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:40:46</span> * <span class="user">CxByte</span> <span class="content">is curious what it would generate</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:41:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Well, there&#x27;s an example in the readme, and I recently ported it to python3, so feel free to give it a try! ^^</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:42:33</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">Of Does Does your your contact code code BenW to correctly contain course find out handle it unexpected does! overflow? why! integer overflow?</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:42:44</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Make UserspaceEmulator emulate again! (BenWiederhake opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5697 https://github.com/SerenityOS/serenity/actions/runs/633273764</span></span><br/>
+<span class="mono"><span class="time">2021-03-08T18:42:50</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">&quot;overflow? why!&quot;</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

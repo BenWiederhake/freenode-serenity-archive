@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #125770</h1>
+<p>
+<span class="mono"><span class="time">2021-02-09T19:58:09</span> &lt;<span class="user">kling</span>&gt; <span class="content">so, i think the plt trampoline is only used for RTLD_LAZY</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:58:26</span> &lt;<span class="user">kling</span>&gt; <span class="content">so that&#x27;ll be why you&#x27;re not seeing any trouble with this</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:58:34</span> &lt;<span class="user">kling</span>&gt; <span class="content">since nothing in the system does lazy binding</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:58:49</span> &lt;<span class="user">thakis</span>&gt; <span class="content">oh good</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:58:59</span> &lt;<span class="user">thakis</span>&gt; <span class="content">but eventually we might want to do that?</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:59:09</span> &lt;<span class="user">kling</span>&gt; <span class="content">i think no</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:59:35</span> &lt;<span class="user">kling</span>&gt; <span class="content">but</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:59:36</span> &lt;<span class="user">thakis</span>&gt; <span class="content">oh jeez, poor https://github.com/plt</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T19:59:56</span> &lt;<span class="user">kling</span>&gt; <span class="content">i&#x27;m not sure we can get rid of the kernel exception</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:00:17</span> &lt;<span class="user">kling</span>&gt; <span class="content">if we decide to not support RTLD_LAZY and only allow RTLD_NOW, we still have to support text relocations</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:00:32</span> &lt;<span class="user">kling</span>&gt; <span class="content">just that they happen in a single pass during dynamic load, and not lazily during program execution</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:00:38</span> &lt;<span class="user">thakis</span>&gt; <span class="content">i wasn&#x27;t sure either but then i looked at the pull request description and it says &quot;The patch is obviously correct&quot;</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:03</span> &lt;<span class="user">kling</span>&gt; <span class="content">so I think we can drop the trampoline from libc but keep the exception</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:12</span> &lt;<span class="user">thakis</span>&gt; <span class="content">in practice, you only end up with textrels if you write assembly that causes them (*cough* ffmpeg)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:22</span> &lt;<span class="user">thakis</span>&gt; <span class="content">do you want to keep it for ports?</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:32</span> &lt;<span class="user">kling</span>&gt; <span class="content">nah let&#x27;s lose it and deal with the pain</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:42</span> &lt;<span class="user">kling</span>&gt; <span class="content">ports should be a challenge :)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:54</span> &lt;<span class="user">kling</span>&gt; <span class="content">(jk but only a little bit jk)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:01:58</span> &lt;<span class="user">thakis</span>&gt; <span class="content">&quot;if your port uses textrels, it likely uses other things that we don&#x27;t want near serenity&quot;</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:02:07</span> &lt;<span class="user">BenW</span>&gt; <span class="content">We really should start a &quot;Quotes&quot; page.</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-02-09T20:02:41</span> &lt;<span class="user">kling</span>&gt; <span class="content">&quot;We really should start a \&quot;Quotes\&quot; page.&quot; -BenW</span></span> <span class="context">(Apparently I said that once too often.)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:02:45</span> &lt;<span class="user">thakis</span>&gt; <span class="content">:D</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:03:09</span> &lt;<span class="user">thakis</span>&gt; <span class="content">that shall be the only entry</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:03:52</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Whoa, a new update for Xquartz? I was not expecting this.</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:04:25</span> &lt;<span class="user">thakis</span>&gt; <span class="content">didn&#x27;t they just update it like a week ago too?</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:04:39</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Could be that update, the window was hanging out in the background</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:04:48</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">I just assumed it was abandonware already</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:04:53</span> &lt;<span class="user">thakis</span>&gt; <span class="content">iirc for the m1 macs</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:05:38</span> &lt;<span class="user">thakis</span>&gt; <span class="content">CxByte, https://oss-fuzz-build-logs.storage.googleapis.com/index.html#serenity</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:06:07</span> &lt;<span class="user">thakis</span>&gt; <span class="content">(click the red exclamation point)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:06:46</span> &lt;<span class="user">thakis</span>&gt; <span class="content">BenW, i made you a quotes page: https://freenode.logbot.info/serenityos</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:08:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">kling: &lt;3</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:08:27</span> &lt;<span class="user">BenW</span>&gt; <span class="content">thakis: ;)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:08</span> &lt;<span class="user">kling</span>&gt; <span class="content">this channel has just the right amount of german humor</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">thakis: By that logic, here&#x27;s a library of all book that have ever been written, are being written, will be written, or have never been written: https://libraryofbabel.info/book.cgi?60r1jttzwnkqp9y376mcecz43v7pb0t6hhmogwdz991b0z61fiqjfarbzpyt084tqbalnmhyz61sl5uhl0u4ycvje3pf4j0nxggo2gvmbewhviehnvi3br8l55mvskspccsh9ytiqbeb9olws4ku1dfyjx9ejhw49ye7gsdlj2s4uwxd6jtsvqrk29d03vu6jwb33sxc79q53hpdwf11nnjxbovoo2u1ex3v22q3ok5d3f99hik041ix4abudjt</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">dyrmdtujlqkjs9yn0vz9wl4gxa6om4hbfh5z7ewhhdafxnozkg9orpl0s41xdzpce4o4o33liephy7lz7quxqz3wlt23olnbvwr9or1ap5a8czoaseggbj8977ekl4299gxsxz4mw2zwygg2pdk71c3ord1hy43cvkslfqrycokhq7w4cqvui983iogqquik2oensjjqtem8bp0tyf25f4vi2pwdsncxzbhp4ujcsj34wu47kbnafoofizn2av6ahf5f6isx3pd4czrfbyhrvlkogu2ou7zqaggdcxvkyblpsgwwprrq50ocmk6dkhyo8ci0a7yo0qp9d9rjt2e3h646zyau64ao0qpbi9mw5ua1599o3eghhuby7xdxyn2oq647pyh0328pj1ej3ej428m5941ei8rbsne7hmpepzro3795w2enu</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">307pl5rekfhemjsbuo3j4dpahr4yjrryvi3wz3ifg1go9qdnt5dqtdiv1205w4va9nceml4umexcpdiucity6nuyqm9m4onzry2tpfg5oqurbspicayiegfcif5otz2u6rxz5gx55g4jjb27cj9qk1cnboof3i59g2xy7dfgjc47obl5jdqdd8gtatp3xhc2rez50j164s695lhx5xqrao2j80u5a2sob8kf2vrbubver97celear6g0dui2xvjhvbi7kcof6j9c0gvhznfxsg5n8xdkk7txv3hozxf2o3275nq4t0pkzgkfv70gkr6lr73flvwdovd6kawcdmb36nbcxst7z78f5bval0sosop7sqjzvq1uef8mv5w5ejhui1x84azdz6ui7hxv115pbec5xoys5q1sovsmbcn9pb22k5lym0r3a</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">hlr0106c2cdpulevxy1c4d8cwjiks9sz3bld15oyzq8y9i344vvfqb59tnt5zfsxumy0u4el2fx5kuqtj3sjvjoc6o7fkofyf8bpi558k3jwkpco9ee90le5t5kkvgwtjalcwizr2lhenikgdpb438owr8mw7izzclrqkxo9kmg19bmhzts247o9ovhez8q1ekhrjxpnmn12ysw7ujli6p4a197oq0ht97jngv2qudsew33vz6o9ywbpgtaj5r9ktabu0r42abav88cz7rgqzgqzragl8hcv1vv47v13z9z13luu6ze5237tgdnh2frt3f8cwgpgkgtbtnknzdcvpal485dw6cptjjfqh3r8908jf7z45qasy66a1qw2wqe8za9bpibs5wqfui0ovy4h8a6x459csn8lrcfy3i0qrm3rvhi8sgxiz</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:20</span> &lt;<span class="user">BenW</span>&gt; <span class="content">suxm6ttnsgal6grwmiz99hub1z8oxuay9o9a3i98ibeubs2lhsw12mm3w9m9j2xcfe0whxzx96876ke0lysa1l5h0ppjtelo4c7gyh821kh4ti2lk88mvrjxlp60scxe30cgsvqotjwfuqkc1es7vfa59f72hb66vexq0mc3j9f6ujzfj83iu667n1a4kmhejlbrre4z9zf0st35eevpvgwxhv2jbv6vilxhm82dep9ymzh33hkcj62yqmru1jg4wkwca1qn0gxoj742m8bap47edf9p7zpl9h62sphalskx8tqtm7vwcbl2w06av5ohh6vd0bxblvw5rzw5i5nbo4gwknvgerocl7cs6742b63ra53vy3kwj3jgfar5-w1-s3-v25:1</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:34</span> &lt;<span class="user">BenW</span>&gt; <span class="content">(I&#x27;m sorry, I noticed too late that the link is so long)</span></span><br/>
+<span class="mono"><span class="time">2021-02-09T20:09:49</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Holy mother of trackers</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

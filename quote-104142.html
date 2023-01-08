@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #104142</h1>
+<p>
+<span class="mono"><span class="time">2020-11-29T12:27:15</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">danboid: it has a more though</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:27:20</span> &lt;<span class="user">danboid</span>&gt; <span class="content">I can&#x27;t think of a exact reason, I just know that if I was to actually use serenity for work I&#x27;d need more than 500 lines scrollback - log files etc</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:27:53</span> &lt;<span class="user">danboid</span>&gt; <span class="content">10/20K should be good enough yes</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:28:16</span> &lt;<span class="user">BenW</span>&gt; <span class="content">CxByte: Whoops, I only use 10K, too.</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:28:45</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">seems like 10K is the sweet spot (n=2)</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:29:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">How do I ask ninja for a &quot;backtrace&quot;?</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:29:36</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">crash it in gdb?</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:29:39</span> &lt;<span class="user">nooga</span>&gt; <span class="content">danboid: we can also have `less`</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:29:44</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I&#x27;m trying to build the BMP fuzzer, and I run into a compilation error in LibTLS. I want to know why it tries to compile LibTLS at all.</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:29:51</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Different kind of backtrace :)</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:30:14</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">BenW: LibTLS is part of Lagom...</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:33:11</span> &lt;<span class="user">BenW</span>&gt; <span class="content">So it always pulls in *everything* from Lagom into a Lagom-binary?</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:33:18</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">yep</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:33:25</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">libLagom.a, specifically</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:33:30</span> &lt;<span class="user">linusg</span>&gt; <span class="content">I&#x27;m not a CMake-wizard but surely that could be fixed? Having to build the whole of LAGOM_MORE_SOURCES for any program linked against Lagom is kinda disappointing</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:33:42</span> &lt;<span class="user">BenW</span>&gt; <span class="content">↑</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:34:21</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">I guess so, I think it&#x27;s like that since Lagom has been used mainly for tests</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:34:57</span> &lt;<span class="user">linusg</span>&gt; <span class="content">&quot;I wanna fuzz some image decoders&quot; - &quot;OK, build this JavaScript engine first&quot;</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:34:58</span> &lt;<span class="user">linusg</span>&gt; <span class="content">:)</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:35:38</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">well, to be fair, we&#x27;re fuzzing the javascript engine too</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2020-11-29T12:36:14</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">dammit fuzzer, what madman would write &#x27;?~x/&#x27;?</span></span> <span class="context">(Fuzzers are even worse than users.)</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:36:33</span> &lt;<span class="user">linusg</span>&gt; <span class="content">&quot;I wanna fuzz this JS engine&quot; - &quot;OK, build this graphics library first&quot;</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:37:14</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">&quot;I wanna fuzz this JS engine&quot; - &quot;OK, build this OS first&quot;</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:37:27</span> &lt;<span class="user">nooga</span>&gt; <span class="content">&quot;I wanna hello world&quot; - &quot;OK, link all the things to your binary&quot;</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:37:33</span> &lt;<span class="user">danboid</span>&gt; <span class="content">Harsh truths</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:37:56</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">Lagom: next-gen node_modules</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:38:11</span> &lt;<span class="user">nooga</span>&gt; <span class="content">I think serenity would get 3x smaller on disk if we had dynamic libs</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:38:27</span> &lt;<span class="user">danboid</span>&gt; <span class="content">We&#x27;re almost there now right? Right?</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:38:33</span> &lt;<span class="user">nooga</span>&gt; <span class="content">I think so</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:39:26</span> &lt;<span class="user">danboid</span>&gt; <span class="content">Can&#x27;t wait for a glorious, dynamically linked userland of joy!</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:39:43</span> &lt;<span class="user">danboid</span>&gt; <span class="content">GLORIOUS</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:39:45</span> &lt;<span class="user">danboid</span>&gt; <span class="content">no less</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:39:53</span> &lt;<span class="user">danboid</span>&gt; <span class="content">Literally no `less`</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:40:09</span> &lt;<span class="user">BenW</span>&gt; <span class="content">nooga: https://github.com/SerenityOS/serenity/issues/3063</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:40:24</span> &lt;<span class="user">danboid</span>&gt; <span class="content">Thats my best UNIX pun in a while I think</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:40:31</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Or rather: https://github.com/SerenityOS/serenity/pull/3738</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:40:42</span> &lt;<span class="user">BenW</span>&gt; <span class="content">danboid: true</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:45:53</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">Eyy, at least the fuzzer doesn&#x27;t blow after ten inputs now</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:49:04</span> &lt;<span class="user">nooga</span>&gt; <span class="content">oh hey</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T12:49:16</span> &lt;<span class="user">nooga</span>&gt; <span class="content">that&#x27;s a very recent development in dynamic libs</span></span><br/>
+<span class="mono"><span class="time">2020-11-29T13:01:02</span> &lt;<span class="user">danboid</span>&gt; <span class="content">kling, Same for DOOM https://github.com/SerenityOS/SerenityDOOM/pull/4</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

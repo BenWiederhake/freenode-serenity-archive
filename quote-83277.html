@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #83277</h1>
+<p>
+<span class="mono"><span class="time">2020-08-05T20:39:46</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Well, it&#x27;s generally just the file name, with no extensions.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:14</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">The CharacterMapFile class load_from_file then prepends /res/keymaps/ and appends .json, if needed</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:30</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">So I don&#x27;t *have* to do filtering here I guess</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:41</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">I figured it would still be good just in case?</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:54</span> &lt;<span class="user">kling</span>&gt; <span class="content">yeah let&#x27;s keep path logic in one place</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:56</span> &lt;<span class="user">kling</span>&gt; <span class="content">instead of spreading it</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:40:59</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Sure.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:41:21</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">So for the kernel limitations, I&#x27;ll of course enforce those *in* the kernel, instead of before passing that stuff in</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:41:49</span> &lt;<span class="user">kling</span>&gt; <span class="content">it&#x27;s just a string to store alongside the key mappings, nothing too scary :)</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:41:51</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">We were talking about limiting it to ~50 chars and no special characters</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:00</span> &lt;<span class="user">kling</span>&gt; <span class="content">just do a sanity check like &lt;50 chars or whatever yeah</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:01</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Sure, but I don&#x27;t want to cost you $5!</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:04</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Yeah okay.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:21</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">I&#x27;d just like the /proc/keymap output to be clean, just &#x27;fi&#x27;</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:27</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Instead of a file path and stuff</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:35</span> &lt;<span class="user">kling</span>&gt; <span class="content">/proc/ should be all JSON</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:43</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Ah. True.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:49</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Well, that, then.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:50</span> &lt;<span class="user">kling</span>&gt; <span class="content">but just follow the pattern in ProcFS.cpp :)</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:42:55</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Yep</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2020-08-05T20:42:55</span> &lt;<span class="user">linusg</span>&gt; <span class="content">add some quotes, problem solved?</span></span> <span class="context">(About a different kind of quote, but that's good enough for me! :))</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:43:04</span> &lt;<span class="user">kling</span>&gt; <span class="content">and yeah, the path is not really meaningful anyway</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:43:05</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">{&quot;keymap&quot;: &quot;fi&quot;}</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:43:22</span> &lt;<span class="user">kling</span>&gt; <span class="content">what matters is &quot;hey, you are using a keymap that identified as &#x27;fi&#x27; when i loaded it&quot;</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:43:25</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">*Then* I can modify the KeyboardSettings app to read that, and show what&#x27;s currently selected in the combobox!</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:43:43</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">It&#x27;s a detail that popped out as weird to me, so this is an easy thing I can fix.</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:44:27</span> &lt;<span class="user">kling</span>&gt; <span class="content">those are the best things to work on</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:45:52</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Do I cast const char * to Userspace&lt;const u8*&gt; or what</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:06</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">For the syscall params</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:16</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">(SC_setkeymap_params)</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:24</span> &lt;<span class="user">kling</span>&gt; <span class="content">no need, that happens implicitly</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:32</span> &lt;<span class="user">kling</span>&gt; <span class="content">you can just pass your const char*</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:42</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Not according to Qt Creator here</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:46:50</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">No viable conversion</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:02</span> &lt;<span class="user">kling</span>&gt; <span class="content">QtCreator doesn&#x27;t know if you&#x27;re in kernel or userspace</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:03</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">I just do m_character_map_name.characters()</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:06</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Ooh true</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:14</span> &lt;<span class="user">kling</span>&gt; <span class="content">i switch that by editing my project.config file</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:22</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">I did the same</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:26</span> &lt;<span class="user">kling</span>&gt; <span class="content">&quot;#define KERNEL&quot; for kernel hax, comment it out for userspace</span></span><br/>
+<span class="mono"><span class="time">2020-08-05T20:47:45</span> &lt;<span class="user">vkoskiv</span>&gt; <span class="content">Yeah, I wrote the video tutorial into a little text guide and filed a PR</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

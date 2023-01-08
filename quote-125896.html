@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #125896</h1>
+<p>
+<span class="mono"><span class="time">2021-02-10T16:05:58</span> &lt;<span class="user">linusg</span>&gt; <span class="content">maybe try https://freenode.logbot.info/serenityos/20210119#c6589457-c6589469</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T16:06:37</span> &lt;<span class="user">ruptwelve</span>&gt; <span class="content">oh thanks Linus!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T17:06:15</span> &lt;<span class="user">ruptwelve</span>&gt; <span class="content">Okay - got it working on my Lenovo! Did not try it on the Mac yet! But thanks for the info provided linusg</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T17:40:30</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">WindowServer: Fix compositing of fullscreen window (linusg opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5286 https://github.com/SerenityOS/serenity/actions/runs/555358323</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T17:56:22</span> &lt;<span class="user">BenW</span>&gt; <span class="content">9de1253f447753ee5592a9fefeb9caf7e033edff Oof</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T17:56:42</span> &lt;<span class="user">BenW</span>&gt; <span class="content">kling: Seems like you&#x27;e much more efficient at that than my tool ^^&#x27;</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:12:12</span> &lt;<span class="user">BenW</span>&gt; <span class="content">return (process.*(s_syscall_table[function]))(arg1, arg2, arg3); // I didn&#x27;t even know this was valid syntax o.O</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:14:08</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">yeah member pointers are....fun ;) not</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:24:01</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">HackStudio: Show notification if &#x27;make&#x27; is not available (itamar8910 opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5287 https://github.com/SerenityOS/serenity/actions/runs/555474346</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:26:10</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">LibWeb: Relayout document on CharacterData data change (+9 commits) (pushed master: The build passed.) https://github.com/SerenityOS/serenity/compare/70bd1724db21...8743ea31498b https://github.com/SerenityOS/serenity/actions/runs/555481164</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:39:55</span> &lt;<span class="user">supercomputer7</span>&gt; <span class="content">hello friends</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:44:48</span> &lt;<span class="user">concernedanon10</span>&gt; <span class="content">hello supercomputer7!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T18:45:02</span> &lt;<span class="user">supercomputer7</span>&gt; <span class="content">hello concernedanon10!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:16:19</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">WindowServer: Don&#x27;t re-render the window frame when not needed (tomuta opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5288 https://github.com/SerenityOS/serenity/actions/runs/555609036</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:18:23</span> &lt;<span class="user">boricj</span>&gt; <span class="content">So... I was trying to fix the RTC fallback of KernelRng because it generates a huge number of unsigned integer overflow warnings and I&#x27;ve found out that AK::IsUnsigned is broken.</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:19:13</span> &lt;<span class="user">boricj</span>&gt; <span class="content">And it&#x27;s more than my C++-fu can handle to fix that.</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:19:19</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Any suggestions?</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:20:09</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I personally would start with AK::IsUnsigned, and embrace the C++-fu :P</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:21:00</span> &lt;<span class="user">boricj</span>&gt; <span class="content">That would be commendable, but I&#x27;m afraid of where pulling that string will take me.</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:22:27</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Because AK::IsUnsigned&lt;T&gt; is just IsSame&lt;T, MakeUnsigned&lt;T&gt;&gt; and I&#x27;m not nearly good enough with modern C++ to mess with that.</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-02-10T19:55:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&gt; I&#x27;m afraid of where pulling that string will take me.</span></span> <span class="context">(C++ templates will lead you down the rabbithole.)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:55:15</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I keep telling y&#x27;all, we need a Quotes page! :)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:59:29</span> &lt;<span class="user">jcs</span>&gt; <span class="content">you could make an implementation of fortune(6)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:09:48</span> &lt;<span class="user">linusg</span>&gt; <span class="content">cowsay, but it&#x27;s a ladybug</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:09:50</span> &lt;<span class="user">linusg</span>&gt; <span class="content">:^)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:25:13</span> &lt;<span class="user">BenW</span>&gt; <span class="content">.oO( /usr/share/man/man6/Quotes.md )</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:27:46</span> &lt;<span class="user">concernedanon10</span>&gt; <span class="content">ladybugsay?</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:32:04</span> &lt;<span class="user">BenW</span>&gt; <span class="content">:D</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T20:42:22</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">C++ autocomplete - Continued (itamar8910 opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5290 https://github.com/SerenityOS/serenity/actions/runs/555821263</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:02:33</span> &lt;<span class="user">rowbee\</span>&gt; <span class="content">hairless k.ling very blursed</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:02:39</span> &lt;<span class="user">rowbee\</span>&gt; <span class="content">i know i&#x27;m late on this</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:31:54</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">(a very late, for me) hello friends!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:32:32</span> &lt;<span class="user">linusg</span>&gt; <span class="content">(a somewhat late, for me) hcxb!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:32:37</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">hl!</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:39:07</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">BenW: maybe one of us should take the initiative and make a SerenityOS/QuotesDB repo; we can even make it a submodule that lives in Base/usr/share/quotes that a theoretical `ladybugsay` can access</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:39:43</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">AK: Make IsUnsigned&lt;T&gt; behave as you would expect (pushed master: The build passed.) https://github.com/SerenityOS/serenity/compare/8743ea31498b...497d48a8dea0 https://github.com/SerenityOS/serenity/actions/runs/555956325</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:39:47</span> &lt;<span class="user">BenW</span>&gt; <span class="content">You could even make it a shell built-in *cough*</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:40:07</span> &lt;<span class="user">BenW</span>&gt; <span class="content">kling: :D</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:40:13</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">sure...? sounds like an odd builtin, but why not</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:40:45</span> &lt;<span class="user">BenW</span>&gt; <span class="content">ShellOS: Even the Browser is a built-in</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T21:41:01</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">that&#x27;s just emacs</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

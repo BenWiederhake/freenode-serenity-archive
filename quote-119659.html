@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #119659</h1>
+<p>
+<span class="mono"><span class="time">2021-01-22T16:40:30</span> * <span class="user">tomuta</span> <span class="content">is using rdp every day to remote into my windows vm at work</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:41:11</span> &lt;<span class="user">kling</span>&gt; <span class="content">I remember rdp being better than vnc in 2005 already, and vnc has not really improved since then</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:42:03</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">I think it&#x27;s doable pulling off something as good. Let&#x27;s not go down the VNC hole</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:42:14</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">though I suppose rendering a VNC stream would be doable as well</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:43:06</span> &lt;<span class="user">kling</span>&gt; <span class="content">it needs to be at a reasonable complexity cost as well</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:43:55</span> &lt;<span class="user">kling</span>&gt; <span class="content">VNC is dumb simple, which is a plus. i believe you that we can do better ofc :)</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:47:29</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">I don&#x27;t think it&#x27;s terribly hard as long as we abstract things underneath so we can redirect draw operations, bitmaps etc</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:48:33</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">LibGfx: Implement blit_offset() in terms of blit() (pushed master: The build passed.) https://github.com/SerenityOS/serenity/compare/586c0aa043eb...2fe6a313c2a3 https://github.com/SerenityOS/serenity/actions/runs/504136585</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:57:12</span> &lt;<span class="user">nooga</span>&gt; <span class="content">hm</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:58:01</span> &lt;<span class="user">nooga</span>&gt; <span class="content">I worked on a mobile remoting solution some time ago</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:58:53</span> &lt;<span class="user">nooga</span>&gt; <span class="content">you could use your android phone to &quot;hijack&quot; another phone, different model even</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:59:37</span> &lt;<span class="user">nooga</span>&gt; <span class="content">with full 11-finger multitouch, GPS spoofing, sound and all, even remote ADB for debugging</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T16:59:42</span> &lt;<span class="user">nooga</span>&gt; <span class="content">over internet ofc</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:00:48</span> &lt;<span class="user">nooga</span>&gt; <span class="content">it took as more than a year to come up with an efficient video pipeline to stream the screen contents with minimal latency over internet</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:02:14</span> &lt;<span class="user">nooga</span>&gt; <span class="content">we even tried patching Android&#x27;s graphics libs to get remote drawing at some point but that was pretty terrible</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:02:18</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Meta: Get building on NixOS (#5005) (pushed master: The build passed.) https://github.com/SerenityOS/serenity/compare/2fe6a313c2a3...0bf5669ba3a7 https://github.com/SerenityOS/serenity/actions/runs/504159747</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:03:42</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Everywhere: Fix typos (linusg opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5048 https://github.com/SerenityOS/serenity/actions/runs/504161493</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:04:10</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Calculator: Give the &#x27;9&#x27; button a blue foreground color as well (linusg opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5049 https://github.com/SerenityOS/serenity/actions/runs/504161924</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:05:15</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Meta: Use a bash shebang for text-to-cpp-string.sh (linusg opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5047 https://github.com/SerenityOS/serenity/actions/runs/504161087</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:08:22</span> &lt;<span class="user">nooga</span>&gt; <span class="content">in the end we had both low latency and very good quality but it relied on hardware codecs which you don&#x27;t have on PCs so this approach wouldn&#x27;t work for a &quot;VNC 2.0&quot; type of thing</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-01-22T17:08:55</span> &lt;<span class="user">nooga</span>&gt; <span class="content">which is a shame, because I&#x27;d totally implement that</span></span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:11:18</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Do we have a &quot;Quotes&quot; page? Because this should go on a &quot;Quotes&quot; page.</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:11:55</span> &lt;<span class="user">nooga</span>&gt; <span class="content">did I say something stupid? :D</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:13:10</span> &lt;<span class="user">BenW</span>&gt; <span class="content">No, not stupid, don&#x27;t worry. &quot;I&#x27;d totally implement that&quot; just sounds quote-able :D</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:15:35</span> &lt;<span class="user">nooga</span>&gt; <span class="content">just to end the rant: I think the simplest thing one can do is to scan the bitmaps with a JPEG codec on the fly and cat the resulting frames to a socket. If you know the dirty regions, even better, send only those with coordinates. The renderer just slaps what it gets on screen and it&#x27;s decent enough if you&#x27;re in the same building.</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:16:53</span> &lt;<span class="user">nooga</span>&gt; <span class="content">BenW: hehe</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:16:57</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">nooga: RDP deosn&#x27;t generally stream the screen content</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:19:49</span> &lt;<span class="user">nooga</span>&gt; <span class="content">tomuta: I&#x27;m not too familiar with RDP</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:20:40</span> &lt;<span class="user">nooga</span>&gt; <span class="content">isn&#x27;t it like a multiplexed protocol for a bunch of stuff?</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:21:52</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">yeah it can do all sorts of things, from display to sound, printing etc</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:22:11</span> &lt;<span class="user">nooga</span>&gt; <span class="content">how does the display part work then?</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:23:54</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">Well, let&#x27;s say an application wants to draw a line. Instead of rendering it into a bitmap on the host, it sends the draw-line command over as an IPC to the client, who renders it into a bitmap on the client side</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:24:51</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">Or, if an application loads a bitmap from a file, or somehow renders a bitmap on the host that needs to be used to blit to the screen, that blit operation then would take that bitmap, compress it and send it over to the client, who then does the blit and render it</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:25:50</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">But anything rendered to the screen is generally just sent as IPC messages over the socket, and the client just executes them</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:28:11</span> &lt;<span class="user">nooga</span>&gt; <span class="content">yeah</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:28:19</span> &lt;<span class="user">nooga</span>&gt; <span class="content">we tried that with Skia on android</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:29:44</span> &lt;<span class="user">nooga</span>&gt; <span class="content">turns out that modern phones draw way too much stuff to fit on the wire</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:30:45</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">nooga: That&#x27;s why Windows applications check if they are being rendered remotely. So that they skip animations etc which would saturate the socket connection</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:31:11</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">Most don&#x27;t need to do that, but stuff that animates etc *should*</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:32:34</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">I never tried stuff using DirectX/OpenGL over RDP, I don&#x27;t expect a good experience for those types of things</span></span><br/>
+<span class="mono"><span class="time">2021-01-22T17:32:46</span> &lt;<span class="user">tomuta</span>&gt; <span class="content">Which is pretty much the bulk of just about any phone app ;-)</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>

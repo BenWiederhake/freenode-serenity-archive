@@ -1,0 +1,18 @@
+.mono {
+font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+.user {
+color: red;
+}
+.time {
+color: grey;
+}
+.content {
+font-weight: 600;
+}
+.highlight {
+background-color: #FF8;
+}
+.context {
+font-style: italic;
+}

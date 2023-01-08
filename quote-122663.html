@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Funny quotes from the historic #serenityos freenode channel">
+    <meta name="keywords" content="Funny, quotes, SerenityOS">
+    <meta name="robots" value="index">
+    <title>Serenity Freenode Quotes</title>
+    <link rel="author" href="https://github.com/BenWiederhake/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="x.css">
+</head>
+
+<body>
+<h1>Quote around line #122663</h1>
+<p>
+<span class="mono"><span class="time">2021-01-30T19:00:07</span> &lt;<span class="user">BenW</span>&gt; <span class="content">It&#x27;s a few keypresses more than the highscore, butit&#x27;s close :D</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:00:10</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Or lowscore?</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:00:52</span> &lt;<span class="user">BenW</span>&gt; <span class="content">đ, and TextEditor and everything else handles it nicely, so it&#x27;s definitely LibLine specific.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:01:45</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">oh I see, libc considers it a control character for some reason</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:02:11</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">so libline tries to print its caret form, but that&#x27;s clearly dumb</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:02:32</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">(and AK::Format doesn&#x27;t like non-ascii for :c)</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:02:38</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">kling: wow I was able to get critical sections working already without disabling interrupts. I expected all kinds of mayhem</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:04:57</span> &lt;<span class="user">tomuta_</span>&gt; <span class="content">unfortunately some other change still causes some things to be really slow when booting or starting stuff. Browser shows a whopping 1300ms, and screen stays black for a few seconds. But it&#x27;s snappy and works great other than those delays. not sure what the deal is</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:08:24</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Finally managed to root-cause the NE2000 driver issue.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:08:48</span> &lt;<span class="user">boricj</span>&gt; <span class="content">I was writing the MAC address on top of 6 control registers &gt;_&lt;</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:09:01</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Instead of the actual MAC address registers.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:09:22</span> &lt;<span class="user">boricj</span>&gt; <span class="content">I had to run QEMU under a debugger to figure that one out.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:09:49</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Still think NE2000 is a smoking piece of hot garbage.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:26:57</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">WindowManager: Restore a window&#x27;s geometry when untiling it using keyboard shortcuts (etaIneLp opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5185 https://github.com/SerenityOS/serenity/actions/runs/523879500</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:27:56</span> &lt;<span class="user">temp_pmet60</span>&gt; <span class="content">hello there! I am setitng the ttl of an icmp packet to a specific number but the packet that wireshark captures has a ttl of 64. The logs I set on send_ipv4 of the network adapter show me that the ttl that is being set is the one that I set. 64 is the default value of IPv4Socket but from what I got from my logs the ttl has been successfully set</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:28:10</span> &lt;<span class="user">temp_pmet60</span>&gt; <span class="content">Any idea what I am doing wrong here? :/</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:40:59</span> &lt;<span class="user">linusg</span>&gt; <span class="content">BenW: you&#x27;ll probably have to start a quotes section at some point :D</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:41:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">^^</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:41:23</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">someone make github.com/serenityos/quotes</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:41:36</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I was thinking more of a &quot;Discussions&quot; page.</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-01-30T19:41:53</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">we can&#x27;t not have the quotes under VC, that&#x27;s a sin</span></span> <span class="context">(A quote about putting quotes in VC, in VC.)</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:46:42</span> &lt;<span class="user">BenW</span>&gt; <span class="content">git commit -m &quot;!!&quot;</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:46:54</span> &lt;<span class="user">linusg</span>&gt; <span class="content">git commit -m &quot;Refactor quote&quot;</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:47:25</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">Revert &quot;Refactor quote&quot;; that broke other quotes</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:58:44</span> &lt;<span class="user">BenW</span>&gt; <span class="content">linusg: Local workaround: Create a new directory &quot;serenity}&quot; next to &quot;serenity&quot;, put the sync-local.sh script there</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:58:45</span> &lt;<span class="user">BenW</span>&gt; <span class="content">XD</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:59:11</span> &lt;<span class="user">BenW</span>&gt; <span class="content">*And* in the correct spot, because that&#x27;s what gets executed.</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:59:37</span> &lt;<span class="user">linusg</span>&gt; <span class="content">oof</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T19:59:40</span> &lt;<span class="user">linusg</span>&gt; <span class="content">do not like</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:06:17</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">Meta: Fix sync-local.sh file check (linusg opened: The build passed.) https://github.com/SerenityOS/serenity/pull/5186 https://github.com/SerenityOS/serenity/actions/runs/523931897</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:06:36</span> &lt;<span class="user">BenW</span>&gt; <span class="content">Whee! I get to create a new syscall :D</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:09:12</span> &lt;<span class="user">kling</span>&gt; <span class="content">temp_pmet60: QEMU clobbers the TTL field, unfortunately :(</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:10:19</span> &lt;<span class="user">kling</span>&gt; <span class="content">i dug into it a bit ~1 year ago and lost interest when i got to the SLIRP driver</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:11:11</span> &lt;<span class="user">nooga</span>&gt; <span class="content">hmm</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:12:16</span> &lt;<span class="user">temp_pmet60</span>&gt; <span class="content">kling Oh my god! I have spent days trying to figure out why is this happening, I did not want to bother anyone here about this lol</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:12:35</span> &lt;<span class="user">temp_pmet60</span>&gt; <span class="content">worth lol</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:12:55</span> &lt;<span class="user">temp_pmet60</span>&gt; <span class="content">at least I got to understand the networking flow</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:18:41</span> &lt;<span class="user">nooga</span>&gt; <span class="content">CxByte: is this a good time to have a parser generator?</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:18:57</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">it&#x27;s always a good time to make a parser generator</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:19:33</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">why this particular moment?</span></span><br/>
+<span class="mono"><span class="time">2021-01-30T20:20:12</span> &lt;<span class="user">nooga</span>&gt; <span class="content">I just looked at the dusty tome, the dragonbook and remembered a chapter about LALR table generation</span></span>
+</p>
+<p>See also <a href="index.html">all other quotes</a>.</p>
+</body>
+</html>
