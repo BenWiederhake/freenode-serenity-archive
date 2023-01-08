@@ -16,8 +16,10 @@
 </head>
 
 <body>
-<h1>Quote around line #125896</h1>
+<h1>Quote around line #125894</h1>
 <p>
+<span class="mono"><span class="time">2021-02-10T16:03:52</span> &lt;<span class="user">ruptwelve</span>&gt; <span class="content">Hey kling - what is your desktop setup? Do you do developemnt and record from the same Linux machine? I got some terrible performance from running Serenity on my Mac, so wondering what may be different here</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T16:05:54</span> &lt;<span class="user">linusg</span>&gt; <span class="content">probably lack of KVM</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T16:05:58</span> &lt;<span class="user">linusg</span>&gt; <span class="content">maybe try https://freenode.logbot.info/serenityos/20210119#c6589457-c6589469</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T16:06:37</span> &lt;<span class="user">ruptwelve</span>&gt; <span class="content">oh thanks Linus!</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T17:06:15</span> &lt;<span class="user">ruptwelve</span>&gt; <span class="content">Okay - got it working on my Lenovo! Did not try it on the Mac yet! But thanks for the info provided linusg</span></span><br/>
@@ -35,10 +37,10 @@
 <span class="mono"><span class="time">2021-02-10T19:18:23</span> &lt;<span class="user">boricj</span>&gt; <span class="content">So... I was trying to fix the RTC fallback of KernelRng because it generates a huge number of unsigned integer overflow warnings and I&#x27;ve found out that AK::IsUnsigned is broken.</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T19:19:13</span> &lt;<span class="user">boricj</span>&gt; <span class="content">And it&#x27;s more than my C++-fu can handle to fix that.</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T19:19:19</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Any suggestions?</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T19:20:09</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I personally would start with AK::IsUnsigned, and embrace the C++-fu :P</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T19:21:00</span> &lt;<span class="user">boricj</span>&gt; <span class="content">That would be commendable, but I&#x27;m afraid of where pulling that string will take me.</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T19:22:27</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Because AK::IsUnsigned&lt;T&gt; is just IsSame&lt;T, MakeUnsigned&lt;T&gt;&gt; and I&#x27;m not nearly good enough with modern C++ to mess with that.</span></span> <br/>
-<span class="highlight"><span class="mono"><span class="time">2021-02-10T19:55:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&gt; I&#x27;m afraid of where pulling that string will take me.</span></span> <span class="context">(C++ templates will lead you down the rabbithole.)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:20:09</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I personally would start with AK::IsUnsigned, and embrace the C++-fu :P</span></span> <br/>
+<span class="highlight"><span class="mono"><span class="time">2021-02-10T19:21:00</span> &lt;<span class="user">boricj</span>&gt; <span class="content">That would be commendable, but I&#x27;m afraid of where pulling that string will take me.</span></span> <span class="context">(C++ templates will lead you down the rabbithole.)</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:22:27</span> &lt;<span class="user">boricj</span>&gt; <span class="content">Because AK::IsUnsigned&lt;T&gt; is just IsSame&lt;T, MakeUnsigned&lt;T&gt;&gt; and I&#x27;m not nearly good enough with modern C++ to mess with that.</span></span><br/>
+<span class="mono"><span class="time">2021-02-10T19:55:14</span> &lt;<span class="user">BenW</span>&gt; <span class="content">&gt; I&#x27;m afraid of where pulling that string will take me.</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T19:55:15</span> &lt;<span class="user">BenW</span>&gt; <span class="content">I keep telling y&#x27;all, we need a Quotes page! :)</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T19:59:29</span> &lt;<span class="user">jcs</span>&gt; <span class="content">you could make an implementation of fortune(6)</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T20:09:48</span> &lt;<span class="user">linusg</span>&gt; <span class="content">cowsay, but it&#x27;s a ladybug</span></span><br/>
@@ -56,9 +58,7 @@
 <span class="mono"><span class="time">2021-02-10T21:39:43</span> &lt;<span class="user">SerenityBot</span>&gt; <span class="content">AK: Make IsUnsigned&lt;T&gt; behave as you would expect (pushed master: The build passed.) https://github.com/SerenityOS/serenity/compare/8743ea31498b...497d48a8dea0 https://github.com/SerenityOS/serenity/actions/runs/555956325</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T21:39:47</span> &lt;<span class="user">BenW</span>&gt; <span class="content">You could even make it a shell built-in *cough*</span></span><br/>
 <span class="mono"><span class="time">2021-02-10T21:40:07</span> &lt;<span class="user">BenW</span>&gt; <span class="content">kling: :D</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T21:40:13</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">sure...? sounds like an odd builtin, but why not</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T21:40:45</span> &lt;<span class="user">BenW</span>&gt; <span class="content">ShellOS: Even the Browser is a built-in</span></span><br/>
-<span class="mono"><span class="time">2021-02-10T21:41:01</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">that&#x27;s just emacs</span></span>
+<span class="mono"><span class="time">2021-02-10T21:40:13</span> &lt;<span class="user">CxByte</span>&gt; <span class="content">sure...? sounds like an odd builtin, but why not</span></span>
 </p>
 <p>See also <a href="index.html">all other quotes</a>.</p>
 </body>
