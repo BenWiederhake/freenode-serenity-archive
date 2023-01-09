@@ -62,6 +62,7 @@ INDEX_FORMAT = """
 {links}
 </ul>
 <p>You can also download the <a href="serenityos.gz">raw, compressed archive of <code>#serenityos</code></a>.</p>
+<p>This page is <a href="https://github.com/BenWiederhake/freenode-serenity-archive">open source</a>.</p>
 </body>
 </html>
 """
